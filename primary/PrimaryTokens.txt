@@ -1,0 +1,19 @@
+<nav class="primary">
+	<ul class="primary__list">
+	[*>NODE]
+	</ul>
+</nav>
+[>NODE]
+	<li class="primary__item[?LAST] primary__item--last[/?]">
+		[?ENABLED]
+			<a href="[=URL]" target="[=TARGET]" class="primary__link">[=TEXT]</a>
+		[?ELSE]
+			<span>[=TEXT]</span>
+		[/?]
+		[?NODE]
+		    <ul class="primary__child">
+		    	[*>NODE]
+		    </ul>
+		[/?]
+	</li>
+[/>]
